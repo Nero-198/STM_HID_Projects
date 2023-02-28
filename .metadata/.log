@@ -1,0 +1,273 @@
+!SESSION 2023-02-20 21:02:52.506 -----------------------------------------------
+eclipse.buildId=Version 1.11.2
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-02-20 21:03:42.848
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-02-20 21:03:42.968
+!MESSAGE Log4j initialized with config file C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-02-20 21:03:48.505
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-02-20 21:05:02.537
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/egit/updates/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-02-20 21:06:44.623
+!MESSAGE Indexed 'VIper_ICP_by_F103' (17 sources, 78 headers) in 3.6 sec: 3,642 declarations; 13,168 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-20 22:14:26.879
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-20 22:14:26.880
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:429)
+	at org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getContents(FileStoreStructureProvider.java:65)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.performFileImport(CopyFilesAndFoldersOperation.java:1386)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(CopyFilesAndFoldersOperation.java:1787)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation$2.execute(CopyFilesAndFoldersOperation.java:896)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx (プロセスはファイルにアクセスできません。別のプロセスが使用中です。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2023-02-20 22:14:26.880
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx (プロセスはファイルにアクセスできません。別のプロセスが使用中です。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	at org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getContents(FileStoreStructureProvider.java:65)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.performFileImport(CopyFilesAndFoldersOperation.java:1386)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(CopyFilesAndFoldersOperation.java:1787)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation$2.execute(CopyFilesAndFoldersOperation.java:896)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-20 22:14:45.642
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-20 22:14:45.642
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:429)
+	at org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getContents(FileStoreStructureProvider.java:65)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.performFileImport(CopyFilesAndFoldersOperation.java:1386)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(CopyFilesAndFoldersOperation.java:1787)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation$2.execute(CopyFilesAndFoldersOperation.java:896)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx (プロセスはファイルにアクセスできません。別のプロセスが使用中です。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2023-02-20 22:14:45.642
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx (プロセスはファイルにアクセスできません。別のプロセスが使用中です。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	at org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getContents(FileStoreStructureProvider.java:65)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.performFileImport(CopyFilesAndFoldersOperation.java:1386)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(CopyFilesAndFoldersOperation.java:1787)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation$2.execute(CopyFilesAndFoldersOperation.java:896)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-20 22:14:55.904
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-20 22:14:55.904
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:429)
+	at org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getContents(FileStoreStructureProvider.java:65)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.performFileImport(CopyFilesAndFoldersOperation.java:1386)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(CopyFilesAndFoldersOperation.java:1787)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation$2.execute(CopyFilesAndFoldersOperation.java:896)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx (プロセスはファイルにアクセスできません。別のプロセスが使用中です。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2023-02-20 22:14:55.905
+!MESSAGE Could not read file: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\Binary_maps.xlsx (プロセスはファイルにアクセスできません。別のプロセスが使用中です。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	at org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getContents(FileStoreStructureProvider.java:65)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.performFileImport(CopyFilesAndFoldersOperation.java:1386)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(CopyFilesAndFoldersOperation.java:1787)
+	at org.eclipse.ui.actions.CopyFilesAndFoldersOperation$2.execute(CopyFilesAndFoldersOperation.java:896)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.ui 4 0 2023-02-20 22:37:05.488
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element main.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2023-02-20 22:37:05.518
+!MESSAGE Element main.c does not exist.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2023-02-20 23:52:24.010
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:328)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2023-02-20 23:52:24.010
+!MESSAGE Setup exceptions
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2023-02-21 02:13:34.388
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:328)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2023-02-21 02:13:34.390
+!MESSAGE Setup exceptions
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2023-02-21 16:46:09.952
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:328)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2023-02-21 16:46:09.952
+!MESSAGE Setup exceptions

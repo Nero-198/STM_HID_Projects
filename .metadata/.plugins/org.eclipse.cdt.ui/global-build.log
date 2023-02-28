@@ -1,0 +1,39 @@
+17:51:30 **** Incremental Build of configuration Debug for project VIper_ICP_by_F103 ****
+make -j6 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:225:14: warning: passing argument 1 of 'keyMatrix' from incompatible pointer type [-Wincompatible-pointer-types]
+  225 |    keyMatrix(&gamepadHID.buttons);
+      |              ^~~~~~~~~~~~~~~~~~~
+      |              |
+      |              uint8_t (*)[5] {aka unsigned char (*)[5]}
+../Core/Src/main.c:98:30: note: expected 'gamepadHID_t *' but argument is of type 'uint8_t (*)[5]' {aka 'unsigned char (*)[5]'}
+   98 | void keyMatrix(gamepadHID_t *gamepad){
+      |                ~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/main.c:246:48: warning: passing argument 2 of 'USBD_CUSTOM_HID_SendReport' from incompatible pointer type [-Wincompatible-pointer-types]
+  246 |      USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, &gamepadHID, sizeof(gamepadHID_t));
+      |                                                ^~~~~~~~~~~
+      |                                                |
+      |                                                gamepadHID_t *
+In file included from ../Core/Src/main.c:26:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h:141:45: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'gamepadHID_t *'
+  141 |                                    uint8_t *report,
+      |                                    ~~~~~~~~~^~~~~~
+arm-none-eabi-g++ -o "VIper_ICP_by_F103.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\iroen\OneDrive\Documents\STM32CubeIDE\HIB_Devices\VIper_ICP_by_F103\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VIper_ICP_by_F103.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: VIper_ICP_by_F103.elf
+ 
+arm-none-eabi-size   VIper_ICP_by_F103.elf 
+arm-none-eabi-objdump -h -S  VIper_ICP_by_F103.elf  > "VIper_ICP_by_F103.list"
+   text	   data	    bss	    dec	    hex	filename
+  40192	    480	   3800	  44472	   adb8	VIper_ICP_by_F103.elf
+Finished building: default.size.stdout
+ 
+Finished building: VIper_ICP_by_F103.list
+ 
+17:51:35 **** Incremental Build of configuration Debug for project VIper_ICP_by_F103 ****
+make -j6 all 
+arm-none-eabi-size   VIper_ICP_by_F103.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40192	    480	   3800	  44472	   adb8	VIper_ICP_by_F103.elf
+Finished building: default.size.stdout
+ 

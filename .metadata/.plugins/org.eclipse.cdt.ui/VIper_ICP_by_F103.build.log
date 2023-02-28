@@ -1,0 +1,10 @@
+17:51:35 **** Incremental Build of configuration Debug for project VIper_ICP_by_F103 ****
+make -j6 all 
+arm-none-eabi-size   VIper_ICP_by_F103.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40192	    480	   3800	  44472	   adb8	VIper_ICP_by_F103.elf
+Finished building: default.size.stdout
+ 
+
+17:51:36 Build Finished. 0 errors, 0 warnings. (took 730ms)
+
